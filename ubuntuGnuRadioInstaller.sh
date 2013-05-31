@@ -12,11 +12,14 @@ libusb-dev sdcc libsdl1.2-dev python-wxgtk2.8 python-numpy \
 python-cheetah python-lxml doxygen python-qt4 python-qwt5-qt4 libxi-dev \
 libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev 
 
-cd ~
+cd /home/swrangsar
+pwd
 wget http://gnuradio.org/releases/gnuradio/gnuradio-3.6.4.2.tar.gz
-tar -xvfz gnuradio-3.6.4.2.tar.gz
+tar -xzvf gnuradio-3.6.4.2.tar.gz
 cd gnuradio-3.6.4.2
-#mkdir build
-#make
-#make test
-cd ~
+mkdir build
+cd build
+cmake ../
+make
+make test
+cd /home/swrangsar
