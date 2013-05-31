@@ -17,7 +17,7 @@ libasound2-dev python-gtk2
 
 cd ~
 pwd
-git clone https://github.com/gnuradio/gnuradio.git
+git clone http://gnuradio.org/git/gnuradio.git
 cd gnuradio
 mkdir build
 cd build
