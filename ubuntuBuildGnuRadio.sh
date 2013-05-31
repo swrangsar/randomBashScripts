@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#this script builds gnuradio-3.6.5 in ubuntu 11.04
+# to install run
+# > cd ~/gnuradio-3.6.5/build
+# > sudo make install
+
 if [[ $UID != 0 ]]; then
 echo "Please run this script with sudo:"
     echo "sudo $0 $*"
