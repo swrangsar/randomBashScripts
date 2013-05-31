@@ -14,9 +14,9 @@ libqt4-opengl-dev libqwt5-qt4-dev libfontconfig1-dev libxrender-dev
 
 cd /home/swrangsar
 pwd
-wget http://gnuradio.org/releases/gnuradio/gnuradio-3.6.4.2.tar.gz
-tar -xzvf gnuradio-3.6.4.2.tar.gz
-cd gnuradio-3.6.4.2
+wget http://gnuradio.org/releases/gnuradio/gnuradio-3.6.5.tar.gz
+tar -xzvf gnuradio-3.6.5.tar.gz
+cd gnuradio-3.6.5
 mkdir build
 cd build
 cmake ../
