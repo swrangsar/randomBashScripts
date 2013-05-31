@@ -16,5 +16,5 @@ port -v install qwt52
 port -v install py27-pyqwt
 port -v install gnuradio +full configure.compiler=llvm-gcc-4.2
 port -v install rtl-sdr
-port -v install wget git-core octave ruby lynx libosip2
+port -v install wget git-core octave ruby lynx libosip2 py27-matplotlib
 cd -
