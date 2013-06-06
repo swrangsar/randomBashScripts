@@ -23,5 +23,7 @@ mkdir build
 cd build
 cmake ../
 make
+make clean
 make test
+make clean
 cd ~
