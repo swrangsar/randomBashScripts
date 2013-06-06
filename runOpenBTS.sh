@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo asterisk -r
+#sudo asterisk -r
 cd ~/OpenBTS/public/smqueue/trunk/smqueue
 sudo ./smqueue
 
