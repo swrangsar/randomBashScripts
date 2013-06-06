@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo echo "LOL"
 sudo gnome-terminal -x sh -c "sudo asterisk -r" &
 
 cd ~/OpenBTS/public/smqueue/trunk/smqueue
