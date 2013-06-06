@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install asterisk autoconf libtool libosip2-dev libortp-dev libusb-1.0-0-dev g++ sqlite3 libsqlite3-dev erlang libreadline6-dev libboost1.48-all-dev
+sudo apt-get install autoconf libtool libosip2-dev libortp-dev libusb-1.0-0-dev g++ sqlite3 libsqlite3-dev erlang libreadline6-dev libboost-all-dev
 
 cd ~
 svn co http://wush.net/svn/range/software/public OpenBTS
