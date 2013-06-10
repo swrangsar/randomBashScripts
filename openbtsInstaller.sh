@@ -2,7 +2,7 @@
 
 sudo apt-get install ubuntu-restricted-extras asterisk autoconf \
 libtool libosip2-dev libortp-dev libusb-1.0-0-dev g++ sqlite3 \
-libsqlite3-dev erlang libreadline6-dev libboost1.48-all-dev
+libsqlite3-dev erlang libreadline6-dev libboost-all-dev
 
 
 cd ~
