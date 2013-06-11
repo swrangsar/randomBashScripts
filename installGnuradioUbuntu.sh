@@ -2,6 +2,7 @@
 
 set -e
 
+sudo apt-get update
 sudo apt-get install libfontconfig1-dev libxrender-dev libpulse-dev \
 swig g++ automake autoconf libtool python-dev libfftw3-dev \
 libcppunit-dev libboost-all-dev libusb-dev libusb-1.0-0-dev \
@@ -22,4 +23,3 @@ cd build/
 cmake ../
 make && make test
 cd ~
-
