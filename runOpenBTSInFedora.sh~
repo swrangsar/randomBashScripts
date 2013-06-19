@@ -10,6 +10,8 @@ sudo gnome-terminal --tab -e "sudo smqueue/trunk/smqueue/smqueue" \
 	--tab -e "sudo subscriberRegistry/trunk/sipauthserve" &
 sleep 1
 
-sudo gnome-terminal -x sh -c "sudo openbts/trunk/apps/OpenBTS" &
-sudo gnome-terminal -x sh -c "sudo openbts/trunk/apps/OpenBTSCLI" &
+cd openbts/trunk/apps/
+sudo gnome-terminal -x sh -c "sudo ./OpenBTS" &
+sudo gnome-terminal -x sh -c "sudo ./OpenBTSCLI" &
+cd ~
 
