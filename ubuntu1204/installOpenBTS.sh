@@ -7,12 +7,11 @@ libsqlite3-dev erlang libreadline6-dev libboost-all-dev
 
 cd ~
 mkdir OpenBTS
-cd OpenBTS
-svn co http://wush.net/svn/range/software/public
+svn co http://wush.net/svn/range/software/public OpenBTS
 
 
 # build openbts
-cd ~/OpenBTS/public/openbts/trunk
+cd ~/OpenBTS/openbts/trunk
 autoreconf -i
 ./configure --with-uhd --with-resamp
 make
@@ -20,7 +19,7 @@ cd apps
 ln -s ../Transceiver52M/transceiver .
 
 # configure openbts
-cd ~/OpenBTS/public/openbts/trunk
+cd ~/OpenBTS/openbts/trunk
 sudo rm -rf /etc/OpenBTS
 sudo mkdir /etc/OpenBTS
 sudo sqlite3 -init ./apps/OpenBTS.example.sql /etc/OpenBTS/OpenBTS.db ".quit"
@@ -30,7 +29,7 @@ cd apps
 
 
 # set up the subscriber registry
-cd ~/OpenBTS/public/
+cd ~/OpenBTS/
 cd subscriberRegistry/trunk/configFiles/
 sudo mkdir -p /var/lib/asterisk/sqlite3dir
 sudo sqlite3 -init subscriberRegistryInit.sql /var/lib/asterisk/sqlite3dir/sqlite3.db ".quit"
@@ -38,7 +37,7 @@ sudo mkdir /var/run/OpenBTS
 
 
 # build sipauthserve
-cd ~/OpenBTS/public/subscriberRegistry/trunk
+cd ~/OpenBTS/subscriberRegistry/trunk
 make
 
 # configure sipauthserve
@@ -46,7 +45,7 @@ sudo sqlite3 -init sipauthserve.example.sql /etc/OpenBTS/sipauthserve.db ".quit"
 
 
 # build smqueue
-cd ~/OpenBTS/public/smqueue/trunk
+cd ~/OpenBTS/smqueue/trunk
 autoreconf -i
 ./configure
 make

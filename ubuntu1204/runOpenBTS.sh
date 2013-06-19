@@ -1,13 +1,13 @@
 #!/bin/bash
 
-sudo echo "Hi, this script is starting OpenBTS!"
+sudo echo "Hi, this script starts OpenBTS in Ubuntu 12.04!"
+sudo service asterisk restart
 sudo gnome-terminal -x sh -c "sudo asterisk -r" &
-sleep 1
 
-cd ~/OpenBTS/public/
+cd ~/OpenBTS/
 sudo gnome-terminal --tab -e "sudo smqueue/trunk/smqueue/smqueue" \
 	--tab -e "sudo subscriberRegistry/trunk/sipauthserve" &
-sleep 1
-sudo gnome-terminal -x sh -c "sudo openbts/trunk/apps/OpenBTS" &
-sleep 3
-sudo gnome-terminal -x sh -c "sudo openbts/trunk/apps/OpenBTSCLI" &
+cd openbts/trunk/apps
+sudo gnome-terminal -x sh -c "sudo ./OpenBTS" &
+sudo gnome-terminal -x sh -c "sudo ./OpenBTSCLI" &
+cd ~
