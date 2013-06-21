@@ -2,7 +2,7 @@
 
 sudo echo "Hi, this script is starting OpenBTS in Fedora!"
 sudo service asterisk restart
-sudo chkconfig asterisk on
+
 sudo gnome-terminal -x sh -c "sudo asterisk -r" &
 
 cd ~/openBTS/
